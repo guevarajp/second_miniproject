@@ -1,135 +1,171 @@
-body {
-  background-color: gray;
+:root{
+  --width: 300px;
+  --width-dot: 25%;
+  --height-bottom: 400px;
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-decoration-color: magenta;
+body {
+  background-color: black;
+ 
 }
-p {
+
+header{
+  display: inline-block;
+  padding: 60px;
+}
+
+h1{
+  text-align: center;
+  font-size: 36px;
+  color: magenta;
+}
+
+h2{
+  font-size: 25px;
+  color: magenta;
+  font-weight: lighter;
+}
+
+header p{
+  text-align: center;
+  color:white;
+}
+
+pre{
+  padding-left: -10px;
+  
+}
+
+footer h1::after{
+  content: &#127769;
+}
+
+#snippet{
   background-color: blueviolet;
-  height: 100px;
   border-radius: 4%;
   font-family: "Courier New", Courier, monospace;
   font-size: large;
+  padding: 10%;
+  user-select: all;
+  cursor: cell;
+  color: white;
 }
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 #row {
   margin: 10px;
-  padding: 20px;
-  position: relative;
-  height: 200px;
-  width: 400px;
+  padding: 20px;                                        
+  width: var(--width-dot);
   animation: 1s;
   border: dashed;
+  border-color: white;
   font-size: x-large;
   text-align: justify;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   word-wrap: normal;
+  height: var(--width)
+}
+
+#card-header{
+  margin-top: -35px;
+  border: 3px solid white;
+  border-radius: 8%;
+  padding-right: auto;
+  background-color: black;
+  border-color: white;
+  
 }
 
 #column {
-  background-color: blueviolet;
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
-  );
   margin: 10px;
   padding: 20px;
   position: relative;
-  height: 200px;
-  width: 400px;
-  border-radius: 10%;
+  width: var(--width-dot);
   border: dashed;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  border-color: white;
+  height: var(--width);
 }
 
 #grid {
-  background-color: blueviolet;
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
-  );
   margin: 10px;
   padding: 20px;
-  position: relative;
-  height: 200px;
-  width: 400px;
-  border-radius: 10%;
+  width: var(--width-dot);
   border: dashed;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  border-color: white;
+  height: var(--width)
 }
 
 #linear-g {
-  background-color: blueviolet;
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
-  );
   margin: 10px;
   padding: 20px;
-  position: relative;
-  height: 200px;
-  width: 400px;
-  border-radius: 10%;
+  width: var(--width-dot);
   border: dashed;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  border-color: white;
+  height: var(--height-bottom);
 }
 #glow {
-  background-color: blueviolet;
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
-  );
   margin: 10px;
   padding: 20px;
-  position: relative;
-  height: 200px;
-  width: 400px;
-  border-radius: 10%;
+  width: var(--width-dot);
   border: dashed;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  border-color: white;
+  height: var(--height-bottom);
 }
 
 #overlay {
-  background-color: blueviolet;
-  background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
-  );
   margin: 10px;
   padding: 20px;
-  position: relative;
-  height: 200px;
-  width: 400px;
-  border-radius: 10%;
+  width: var(--width-dot);
   border: dashed;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  border-color: white;
+  height: var(--height-bottom);
 }
 
-@media screen and (min-width: 480px) {
-  body {
+h1:hover{
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(232,102,236,1);
+  -moz-box-shadow: 0px 0px 100px 0px rgba(232,102,236,1);
+  box-shadow: 0px 0px 100px 0px rgba(232,102,236,1);
+  transition: .5s ease;
+  }
+
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 900px) {
-  body {
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }

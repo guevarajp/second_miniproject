@@ -4,26 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./reset.css">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
+
     <header>
-      <h1>CSS Snippet</h1>
+      <h1 id="header-h1">CSS Snippet</h1>
+      <br>
+      <p id="header-p">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page!Select any snippet below and it'll automatically select all of the code for you to copy</p>
     </header>
+
     <div class="container">
       <section id="row">
-        <h2>Flexbox Row</h2>
-        <p>.box { display: flex; flex-direction: row-reverse; }</p>
+        <h1 id="card-header">Flexbox Row</h1>
+        <h2>Use these three properties to create a Flexbox row layout.</h2>
+        <h3 id="snippet"><pre>
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+        </pre></h3>
       </section>
+
       <section id="column">
-        <h2>Flexbox Column</h2>
-        <p>placeholder text here</p>
+        <h1 id="card-header">Flexbox Column</h1>
+        <h2>Use this to create a Flexbox column layout.</h2>
+        <h3 id="snippet"><pre>
+.column {
+  display: flex;
+  flex-direction: column
+}
+        </pre></h3>
       </section>
-      <section id="grid">CSS Grid Layout</section>
-      <section id="linear-g">Linear Gradients</section>
-      <section id="glow">Box Transition Glow</section>
-      <section id="overlay">Overlay Card with Title</section>
+      
+      <section id="grid">
+        <h1 id="card-header">CSS Grid Layout</h1>
+        <h2>Build a 12-column layout usind CSS Grid</h2>
+        <h3 id="snippet"><pre>
+.grid {
+  display: grid;
+  width: 100%;
+  flex-direction: column
+}
+        </pre></h3>
+      </section>
+
+      <section id="linear-g">
+        <h1 id="card-header">Linear Gradients</h1>
+        <h2>this will create a background linear gradient from top to bottom</h2>
+        <h3 id="snippet"><pre>
+.linear-gradient-background {
+  background-image: linear-
+gradient(
+    rgba(232, 102, 236, 0.3) 0%
+    rgba(232, 102, 236, 0.6) 100%
+       );
+        )
+         }
+        </pre></h3>
+      </section>
+
+
+      <section id="glow">
+        <h1 id="card-header">Box Transition Glow</h1>
+        <h2>Use transition and box shadows to glow on hover</h2>
+        <h3 id="snippet"><pre>
+code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover
+.code-card:hover, .card-header {
+   box-shadow: inset 0px 0px 8px 
+  rgba(232, 102, 236, 1), 0 0 15px
+  rgba(232, 102, 236, 1):
+  }
+        </pre></h3>
+      </section>
+
+      <section id="overlay">
+        <h1 id="card-header">Overlay Card with Title</h1>
+        <h2>Use position properties and negative marins to raise elements higher than their natural starting point</h2>
+        <h3 id="snippet"><pre>
+.card-header {
+  position: relative;
+  margin-top -20px;
+}
+        </pre></h3>
+      </section>
     </div>
+
+    <footer>
+      <h1>thank you for checking out this cheat sheet &#127769; </h1>
+    </footer>
   </body>
 </html>
