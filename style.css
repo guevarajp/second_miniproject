@@ -1,0 +1,140 @@
+body {
+  background-color: gray;
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration-color: magenta;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#row {
+  background-color: blueviolet;
+  background-image: linear-gradient(
+    rgba(232, 102, 200, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  animation: 1s ease-in-out infinite alternate;
+  border: dashed;
+  font-size: x-large;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: normal;
+}
+
+#column {
+  background-color: blueviolet;
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  border: dashed;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid {
+  background-color: blueviolet;
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  border: dashed;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#linear-g {
+  background-color: blueviolet;
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  border: dashed;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#glow {
+  background-color: blueviolet;
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  border: dashed;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#overlay {
+  background-color: blueviolet;
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0% rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  border: dashed;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
+@keyframes glow {
+  section{
+      box-shadow: 0 0 10px -10px purple, 0 0 10px 10px white;
+}
+section{
+    animation: 1s infinite
+}
